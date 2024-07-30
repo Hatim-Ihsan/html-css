@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+</head>
+<style>
+    .navbar{
+        background-color: white;
+        width: 1351px;
+        margin-left: -10px;
+        height: 90px;
+        margin-top: -8px;
+        display:inline-flex;
+        position: fixed;
+
+    }
+    .nav1{
+        background-color: white;
+        height: 50px;
+        width: 364px;
+        /* display: inline-flex; */
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    .nav2{
+        background-color: white;
+        height: 90px;
+        width: 700px;
+        
+        
+        
+        
+    }
+    .nav2 ul{
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+    .nav2 ul li{
+        list-style-type: none;
+        float: left;
+        padding: 2px;
+        border: 2px;
+        /* margin-top: 10px; */
+        margin-left: 35px;
+    }
+    .nav2 ul li a{
+        padding: px;
+        text-decoration:none;
+        color:grey;
+        font-size: 18px;
+        transition: all 0.2s linear;
+        font-family:Arial, Helvetica, sans-serif;
+        
+    }
+
+    .nav2 ul li a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    .nav3{
+        background-color: white;
+        float:right;
+        height: 90px;
+        width: 300px;
+        display: inline-flex;
+    }
+    .nav3 i{
+        color: gray;
+        font-size: 20px;
+        
+
+    }
+    .lit{
+        background-color:white;
+        width: 100px;
+        height: 40px;
+        margin-left: 0px;
+        padding-left: 38px;
+        padding-top: -60px;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+    }
+    .lit p{
+        margin-top: 8px;
+        color: red;
+    }
+    .fes p{
+        margin-top: 8px;
+        color: black;
+        transition: all 0.3s linear;
+    }
+    .fes p:hover{
+        color: red;
+    }
+    .fes{
+        background-color:white;
+        width: 115px;
+        height: 40px;
+        box-sizing: border-box;
+        padding-top: px;
+        font-size:24px ;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        
+    }
+    .nav1 a{
+        text-decoration: none;
+        
+    }
+    .nav11{
+        background-color: white;
+        width: 215px;
+        height: 40px;
+        box-sizing: border-box;
+        display: inline-flex;
+        /* float: right; */
+        margin-top: 2px;
+        margin-left: 80px;
+        
+
+    }
+    .prof{
+        background-color: white;
+        width: 70px;
+        height: 40px;
+        margin-top: 22px;
+        padding-top: 10px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        margin-left: 50px;
+
+    }
+    .cart{
+        background-color: white;
+        width: 70px;
+        margin-top: 22px;
+        height: 40px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        padding-left: 15px;
+    }
+    .fix{
+        width: 1351px;
+        height: 90px;
+    }
+    .pslid{
+        width: 1351px;
+        height: 400px;
+        background-color: rgb(203, 196, 196);
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 80px;
+        font-size: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        color: red;
+        
+    }
+    
+    .pmain{
+        width: 1150px;
+        height: 500px;
+        background-color:white;
+        margin: auto;
+        margin-top: 60px;
+        box-sizing: border-box;
+    
+    }
+    .pmain1:hover{  
+        box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -webkit-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -moz-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65); 
+    }
+    .pmain2:hover{  
+        box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -webkit-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -moz-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65); 
+    }
+    .pmain3:hover{  
+        box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -webkit-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -moz-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65); 
+    }
+    .pmain1{
+        width:370px;
+        height: 500px;
+        background-color: white;
+        background-image: url(./images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg);
+        background-size: 380px ;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+    
+    .pmain2{
+        width:370px;
+        height: 500px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 380px ;
+        background-image: url(./images/product/jordan-nix-CkCUvwMXAac-unsplash.jpeg);
+        margin-left: 390px;
+        margin-top: -513px;
+        box-sizing: border-box;
+    }
+    .pmain3{
+        width:370px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 380px ;
+        box-sizing: border-box;
+        background-image: url(./images/product/nature-zen-3Dn1BZZv3m8-unsplash.jpeg);
+        background-color: white;
+        /* float:right ; */
+        margin-top: -513px;
+        margin-left: 780px;
+    }
+    .pli{
+        text-decoration: none;
+        
+    }
+    .phj{
+        padding-top: 340px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        padding-left: 15px;
+        
+    }
+    .pp{
+        margin-top: -20px;
+        color: gray;
+        padding-left: 15px;
+        
+    }
+    .price{
+        float: right;
+        margin-top:-60px ;
+        margin-right: 15px;
+        
+    }
+    .new{
+        padding-top: 7px;
+        padding-left: 5px;
+        border-bottom-right-radius: 5px;
+        /* border: 1px solid; */
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background-color:white;
+        width: 80px;
+        height: 30px;
+        color: gray;
+    }
+    
+    .pmainp{
+        width: 1150px;
+        height: 500px;
+        background-color:white;
+        margin: auto;
+        margin-top: 60px;
+        box-sizing: border-box;
+    
+    }
+    .pmain1p:hover{  
+        box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -webkit-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -moz-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65); 
+    }
+    .pmain2p:hover{  
+        box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -webkit-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -moz-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65); 
+    }
+    .pmain3p:hover{  
+        box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -webkit-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65);
+        -moz-box-shadow: 1px 2px 21px 11px rgba(140,121,121,0.65); 
+    }
+    .pmain1p{
+        width:370px;
+        height: 500px;
+        background-color: white;
+        background-image: url(./images/product/team-fredi-8HRKoay8VJE-unsplash.jpeg);
+        background-size: 380px ;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+    
+    .pmain2p{
+        width:370px;
+        height: 500px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 380px ;
+        background-image: url(./images/product/quokkabottles-kFc1_G1GvKA-unsplash.jpeg);
+        margin-left: 390px;
+        margin-top: -513px;
+        box-sizing: border-box;
+    }
+    .pmain3p{
+        width:370px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 380px ;
+        box-sizing: border-box;
+        background-image: url(./images/product/anis-m-WnVrO-DvxcE-unsplash.jpeg);
+        background-color: white;
+        /* float:right ; */
+        margin-top: -513px;
+        margin-left: 780px;
+    }
+    .plip{
+        text-decoration: none;
+        
+    }
+    .phjp{
+        padding-top: 340px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        padding-left: 15px;
+        
+    }
+    .ppp{
+        margin-top: -20px;
+        color: gray;
+        padding-left: 15px;
+        
+    }
+    .pricep{
+        float: right;
+        margin-top:-60px ;
+        margin-right: 15px;
+        
+    }
+    .newp{
+        padding-top: 7px;
+        padding-left: 5px;
+        border-bottom-right-radius: 5px;
+        /* border: 1px solid; */
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background-color:white;
+        width: 80px;
+        height: 30px;
+        color: gray;
+    }
+    .footer{
+        background-color: black;
+        width: 1351;
+        height: 400px;
+        margin-top: 70px;
+        
+    }
+    .f1{
+        width: 400px;
+        height:400px ;
+        background-color: black;
+        margin-left: 80px;
+        padding: 80px;
+        box-sizing: border-box;
+        line-height: 50px;
+        color: white;
+        
+    }
+    .f2{
+        width: 400px;
+        height:400px ;
+        margin-left: 470px;
+        margin-top: -400px;
+        background-color: black;
+        box-sizing: border-box;
+        padding: 80px;
+    }
+    .f3{
+        width: 400px;
+        height:400px ;
+        float: right;
+        margin-right: 80px;
+        margin-top: -400px;
+        background-color: black;
+        box-sizing: border-box;
+        padding: 80px;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <div class="nav1">
+            <a href="./index.html"> <div class="nav11">
+            <div class="lit"><p>Little</p></div>
+            <div class="fes"><p>Feshion</p></div>
+            </div></a>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./story.html">Story</a></li>
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="./faqs.html">FAQs</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav3">
+            <div class="prof"><a href="./profile.html"><i class="fa-regular fa-user"></i></a></div>
+            <div class="cart"><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            
+            
+        </div>
+    </div>
+    <div class="fix"></div>
+    <div class="pslid">
+        <p>Choose your
+            favorite stuffs,,</p>
+    </div>
+    <h1 style="margin-top: 80px; margin-left: 90px; font-family: Arial, Helvetica, sans-serif;font-weight: bolder;">New Arrival</h1>
+    <div class="pmain">
+        <a href="./cart.html" class="pli"><div class="pmain1" >
+            <p class="new">New Arrival</p>
+            <h1 class="phj">Tree pot</h1>
+            <p class="pp">Original package design from house</p>
+            <p class="price">25$</p>
+        </div></a>
+        <a href="./cart.html" class="pli"> <div class="pmain2">
+            <p class="new">Low Price</p>
+            <h1 class="phj">Fashion Set</h1>
+            <p class="pp">Costume Package</p>
+            <p class="price">35$</p></div></a>
+            <a href="./cart.html" class="pli"><div class="pmain3">
+                <p class="new">Most Buy</p>
+                <h1 class="phj">Juice Drinks</h1>
+                <p class="pp">Nature made another world</p>
+                <p class="price">45$</p>
+            </div></a>
+    </div>
+    <h1 style="margin-top: 40px; margin-left: 90px; font-family: Arial, Helvetica, sans-serif;font-weight: bolder;">Popular</h1>
+    <div class="pmainp">
+        <a href="./cart.html" class="plip"><div class="pmain1p" >
+            <p class="newp">Trending</p>
+            <h1 class="phjp">Package</h1>
+            <p class="ppp">Original package design from house</p>
+            <p class="pricep">50$</p>
+        </div></a>
+        <a href="./cart.html" class="plip"> <div class="pmain2p">
+            <p class="newp">Trending</p>
+            <h1 class="phjp">Bottle</h1>
+            <p class="ppp">Package design</p>
+            <p class="pricep">100$</p></div></a>
+            <a href="./cart.html" class="plip"><div class="pmain3p">
+                <p class="newp">Trending</p>
+                <h1 class="phjp">Medicine</h1>
+                <p class="ppp">Nature made another world</p>
+                <p class="pricep">200$</p>
+            </div></a>
+    </div>
+    <div class="footer">
+        <div class="f1">
+            <a href="./index.html" style="text-decoration: none; color: white;"><h1>Little Fashion</h1></a>
+            <p>Copyright © 2024 Little Fashion</p>
+            <p>Designed by HATIM</p>
+        </div>
+        <div class="f2">
+            <h1 style="color: white;">Sitemap</h1>
+            <a href="./story.html" style=" color: white;"><p>Story</p></a>
+            <a href="" style=" color: white;"><p>Privacy Policy</p></a>
+            <a href="./contact.html" style=" color: white;"><p>Contact</p></a>
+            <a href="./product.html" style=" color: white;"><p>Product</p></a>
+            <a href="./faqs.html" style=" color: white;"><p>FAQs</p></a>
+            
+        </div>
+        <div class="f3">
+            <h1 style="color: white;">Social</h1>
+            <p style="color: white;">whatsapp...</p>
+            <p style="color: white;">instagram...</p>
+            <p style="color: white;">youtube...</p>
+            <p style="color: white;">facebook...</p>
+        </div>
+    </div>
+</body>
+</html>

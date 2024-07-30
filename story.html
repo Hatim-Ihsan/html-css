@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+</head>
+<style>
+    .navbar{
+        background-color: white;
+        width: 1351px;
+        margin-left: -10px;
+        height: 90px;
+        margin-top: -8px;
+        display:inline-flex;
+        position:fixed ;
+
+    }
+    .nav1{
+        background-color: white;
+        height: 50px;
+        width: 364px;
+        /* display: inline-flex; */
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    .nav2{
+        background-color: white;
+        height: 90px;
+        width: 700px;
+        
+        
+        
+        
+    }
+    .nav2 ul{
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+    .nav2 ul li{
+        list-style-type: none;
+        float: left;
+        padding: 2px;
+        border: 2px;
+        /* margin-top: 10px; */
+        margin-left: 35px;
+    }
+    .nav2 ul li a{
+        padding: px;
+        text-decoration:none;
+        color:grey;
+        font-size: 18px;
+        transition: all 0.2s linear;
+        font-family:Arial, Helvetica, sans-serif;
+        
+    }
+
+    .nav2 ul li a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    .nav3{
+        background-color: white;
+        float:right;
+        height: 90px;
+        width: 300px;
+        display: inline-flex;
+    }
+    .nav3 i{
+        color: gray;
+        font-size: 20px;
+        
+
+    }
+    .lit{
+        background-color:white;
+        width: 100px;
+        height: 40px;
+        margin-left: 0px;
+        padding-left: 38px;
+        padding-top: -60px;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+    }
+    .lit p{
+        margin-top: 8px;
+        color: red;
+    }
+    .fes p{
+        margin-top: 8px;
+        color: black;
+        transition: all 0.3s linear;
+    }
+    .fes p:hover{
+        color: red;
+    }
+    .fes{
+        background-color:white;
+        width: 115px;
+        height: 40px;
+        box-sizing: border-box;
+        padding-top: px;
+        font-size:24px ;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        
+    }
+    .nav1 a{
+        text-decoration: none;
+        
+    }
+    .nav11{
+        background-color: white;
+        width: 215px;
+        height: 40px;
+        box-sizing: border-box;
+        display: inline-flex;
+        /* float: right; */
+        margin-top: 2px;
+        margin-left: 80px;
+        
+
+    }
+    .prof{
+        background-color: white;
+        width: 70px;
+        height: 40px;
+        margin-top: 22px;
+        padding-top: 10px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        margin-left: 50px;
+
+    }
+    .cart{
+        background-color: white;
+        width: 70px;
+        margin-top: 22px;
+        height: 40px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        padding-left: 15px;
+    }
+    .sec2h{
+        font-size: 50px;
+        color: red;
+        font-weight:bolder;
+        font-family: Verdana, Tahoma, sans-serif;
+
+    }
+    .fix{
+        width: 1351px;
+        height: 90px;
+    }
+    .retail{
+        background-color: rgb(240, 234, 234);
+        width: 1351;
+        height: 450px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .retail1{
+        background-color: ;
+        width: 660px;
+        height: 450px;
+        padding: 120px;
+        box-sizing: border-box;
+        
+        
+    }
+    .retail2{
+        background-image: url(./images/header/businesspeople-meeting-office-working.jpg);
+        background-size: 675px;
+        width: 675px;
+        height: 450px;
+        margin-top: -450px;
+        padding: 90px;
+        box-sizing: border-box;
+        float: right;
+    }
+    .meet{
+        background-color: blue;
+        margin-top:70px ;
+        margin-left: 200px;
+    }
+    .meet h1{
+        font-size: 50px;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-weight: bolder;
+        color: red;
+    }
+    .team{
+        width: 1351px;
+        height: 500px;
+        background-color: rgb(177, 167, 167);
+        display: flex;
+        box-sizing: border-box;
+        margin-top: -165px;
+    
+       
+    }
+    .team1{
+        width: 300px;
+        height: 150px;
+        background-color: white;
+        /* float: left;
+        margin-top: 100px; */
+        margin: auto;
+        margin-left: 200px;
+        margin-top: 250px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        
+
+        
+    }
+    .team2{
+        width: 300px;
+        height: 150px;
+        background-color: white;
+        /* margin-left: 440px;
+        margin-top: 200px;
+        /* float: none; */
+        margin: auto;
+        margin-top: 250px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        
+
+    } 
+    .team3 {
+        width: 300px;
+        height: 150px;
+        background-color: white;
+        margin: auto;
+        margin-right: 200px;
+        margin-top: 250px;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+        
+    }
+    .pk{
+        width: 120px;
+        height:100px ;
+        background-color: ;
+        border-radius: 200%;
+        margin-top: 25px;
+        box-sizing: border-box;
+    }
+    .de{
+        width: 180px;
+        height:150px ;
+        background-color:;
+        float: right;
+        margin-top: -125px;
+        color: gray;
+        line-height: 0px;
+        box-sizing: border-box;
+        padding-top: 40px;
+        padding-left: 25px;
+    }
+    .footer{
+        background-color: black;
+        width: 1351;
+        height: 400px;
+        margin-top: 70px;
+        
+    }
+    .f1{
+        width: 400px;
+        height:400px ;
+        background-color: black;
+        margin-left: 80px;
+        padding: 80px;
+        box-sizing: border-box;
+        line-height: 50px;
+        color: white;
+        
+    }
+    .f2{
+        width: 400px;
+        height:400px ;
+        margin-left: 470px;
+        margin-top: -400px;
+        background-color: black;
+        box-sizing: border-box;
+        padding: 80px;
+    }
+    .f3{
+        width: 400px;
+        height:400px ;
+        float: right;
+        margin-right: 80px;
+        margin-top: -400px;
+        background-color: black;
+        box-sizing: border-box;
+        padding: 80px;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <div class="nav1">
+            <a href="./index.html"> <div class="nav11">
+            <div class="lit"><p>Little</p></div>
+            <div class="fes"><p>Feshion</p></div>
+            </div></a>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./story.html">Story</a></li>
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="./faqs.html">FAQs</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav3">
+            <div class="prof"><a href="./profile.html"><i class="fa-regular fa-user"></i></a></div>
+            <div class="cart"><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            
+            
+        </div>
+    </div>
+    <div class="fix"></div>
+  
+    <div class="retail">
+        <div class="retail1">
+            <h1 class="sec2h">Company Fashion</h1>
+        </div>
+        <div class="retail2"></div>
+    </div>
+    <div class="meet"><h1>Meet our team</h1></div>
+    <div class="team">
+        <div class="team1">
+            <div class="pk" style="background-image: url(./images/people/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg); background-size: 120px;"></div>
+            <div class="de">
+                <h2>Don</h2>
+                <h4>Product, VP</h4>
+            </div>
+        </div>
+        <div class="team2">
+            <div class="pk" style="background-image: url(./images/people/portrait-british-woman.jpeg); background-size: 120px;">
+            </div>
+            <div class="de"> <h2>Kelly</h2>
+                <h4>Marketing</h4></div>
+        </div>
+        <div class="team3">
+            <div class="pk" style="background-image: url(./images/people/beautiful-woman-face-portrait-brown-background.jpeg); background-size: 120px;"></div>
+            <div class="de">
+                <h2>Marie</h2>
+                <h4>Founder</h4>
+            </div>
+        </div>
+    </div>
+    <p style="text-align: center; font-size: 50px; color: red; font-weight: bolder;">Customer love,<br>Little Fashion</p>
+    <p style="text-align:center; font-size: x-large; color: gray;" >Lorem ipsum, dolor sit<br> amet consectetur adipisicing elit. Quaerat perspiciatis<br> facilis officiis animi fugiat cumque quae rem fuga aut dicta! Sint nesciunt <br>numquam nobis laborum distinctio amet exercitationem. Dolore, voluptatem!</p>
+    <hr>
+    <div class="footer">
+        <div class="f1">
+            <a href="./index.html" style="text-decoration: none; color: white;"><h1>Little Fashion</h1></a>
+            <p>Copyright © 2024 Little Fashion</p>
+            <p>Designed by HATIM</p>
+        </div>
+        <div class="f2">
+            <h1 style="color: white;">Sitemap</h1>
+            <a href="./story.html" style=" color: white;"><p>Story</p></a>
+            <a href="" style=" color: white;"><p>Privacy Policy</p></a>
+            <a href="./contact.html" style=" color: white;"><p>Contact</p></a>
+            <a href="./product.html" style=" color: white;"><p>Product</p></a>
+            <a href="./faqs.html" style=" color: white;"><p>FAQs</p></a>
+            
+        </div>
+        <div class="f3">
+            <h1 style="color: white;">Social</h1>
+            <p style="color: white;">whatsapp...</p>
+            <p style="color: white;">instagram...</p>
+            <p style="color: white;">youtube...</p>
+            <p style="color: white;">facebook...</p>
+        </div>
+    </div>
+</body>
+</html>
